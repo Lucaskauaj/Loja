@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Store</title>
+    <link rel="stylesheet" href="/Style/Destaques.css">
+    <link rel="stylesheet" href="/Style/load.css">
+    <link rel="stylesheet" href="/Style/Login.css">
+</head>
+<body>
+    <header>
+        <h1>Model Store</h1>
+        <div style="position: relative;">
+            <input type="text" id="Barra" placeholder="Digite para pesquisar..." onkeyup="searchContent()">
+            <ul id="sugestao"></ul>
+        </div>
+        <ul class="Log">
+            <li><a href="">Login</a></li>
+            <li><a href="">Carrinho</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Destaques</a></li>
+            <li><a href="">Feminino</a></li>
+            <li><a href="">Masculino</a></li>
+            <li><a href="">Galeria</a></li>
+        </ul>
+    </nav>
+    <div id="loading">
+        <div class="load"></div>
+    </div>
+    <main>
+        <div id="loading" style="display: none;">
+            <div class="load"></div>
+        </div>
+
+        <div id="resultado" style="display: none;"></div>
+
+        <div class="cartao">
+            <h3></h3>
+            <img src="" alt="Produto 1">
+            <p></p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao">
+            <h3></h3>
+            <img src="" alt="Produto 2">
+            <p></p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao">
+            <h3></h3>
+            <img src="" alt="Produto 3">
+            <p></p>
+            <span class="preco">R$ 10,00</span>
+        </div> 
+        <div class="cartao">
+            <h3></h3>
+            <img src="" alt="Produto 4">
+            <p></p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao">
+            <h3></h3>
+            <img src="" alt="Produto 5">
+            <p></p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao">
+            <h3>Produto 6</h3>
+            <img src="" alt="Produto 6">
+            <p></p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+    </main>
+</body>
+<script src="/scripts/barraps.js"></script>
+<script src="/scripts/load.js"></script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaques</title>
+    <link rel="stylesheet" href="/Style/Destaques.css">
+    <link rel="stylesheet" href="/Style/load.css">
+    <link rel="stylesheet" href="/Style/Login.css">
+    <link rel="stylesheet" href="/Style/roupa.css">
+</head>
+<body>
+    <header>
+        <h1>Model Store</h1>
+        <input type="text" id="Barra" placeholder="Digite para pesquisar..." onkeyup="conteudosg()">
+        <ul id="suggestions" style="display: none;"></ul> <!-- Adicione este elemento para as sugestões -->
+        <ul class="Log">
+            <li><a href="">Login</a></li>
+            <li><a href="">Carrinho</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Destaques</a></li>
+            <li><a href="">Feminino</a></li>
+            <li><a href="">Masculino</a></li>
+            <li><a href="">Galeria</a></li>
+        </ul>
+    </nav>
+    <div id="loading">
+        <div class="load"></div>
+    </div>
+    <main>
+        <div id="loading" style="display: none;">
+            <div class="load"></div>
+        </div>
+        <div id="resultado" style="display: none;"></div>
+        <div class="cartao" data-id="1">
+            <h3>Produto 1</h3>
+            <img src="produto1.jpg" alt="Produto 1">
+            <p>Descrição do Produto 1</p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="2">
+            <h3>Produto 2</h3>
+            <img src="produto2.jpg" alt="Produto 2">
+            <p>Descrição do Produto 2</p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="3">
+            <h3>Produto 3</h3>
+            <img src="produto3.jpg" alt="Produto 3">
+            <p>Descrição do Produto 3</p>
+            <span class="preco">R$ 10,00</span>
+        </div> 
+        <div class="cartao" data-id="4">
+            <h3>Produto 4</h3>
+            <img src="produto4.jpg" alt="Produto 4">
+            <p>Descrição do Produto 4</p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="5">
+            <h3>Produto 5</h3>
+            <img src="produto5.jpg" alt="Produto 5">
+            <p>Descrição do Produto 5</p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="6">
+            <h3>Produto 6</h3>
+            <img src="produto6.jpg" alt="Produto 6">
+            <p>Descrição do Produto 6</p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+    </main>
+
+    <!-- Card -->
+    <div id="card" class="card">
+        <div class="card-content">
+            <span class="close">&times;</span>
+            <h3 id="card-titulo"></h3>
+            <img id="card-imagem" src="" alt="">
+            <p id="card-Descricao"></p>
+            <span id="card-preco"></span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/scripts/barraps.js"></script>
+    <script src="/scripts/load.js"></script>
+    <script src="/scripts/Roupas.js"></script>
+</body>
+</html>
