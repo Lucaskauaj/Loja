@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efefef;
+}
+
+header {
+    align-items: center;
+    text-align: center;
+    border-bottom: solid 2px black;
+    padding: 10px;
+    background-color: #313131;
+    display: flex;
+    gap: 30px;
+}
+
+header h1 {
+    align-items: center;
+    text-align: center;
+    color: #030303;
+    border-bottom: solid black;
+    border-radius: 30px;
+    border-width: 2px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 15px;
+    background-color: #f7b4c4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 130px;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #ff96b2;
+    padding: 15px;
+    font-family: 20px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px 15px;
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a:hover {
+    transform: translateY(-5px);
+}
+
+nav a {
+    transition: 00.3s;
+    border-bottom: black solid 1px;
+    color: #030303;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    margin: 80px auto 20px auto;
+    gap: 10px;
+}
+
+#Barra {
+    padding: 10px;
+    width: 500px;
+    height: 45px;
+    display: flex;
+    border-top: #000 solid 2px;
+    border-left: #000 solid 2px;
+    border-right: #000 solid 2px;
+    border-bottom: #000 solid 2px;
+    border-radius: 20px 20px 0px 0px;
+    border: solid 2px #030303;
+}
+
+
+.teste {
+    margin: 10px 0;
+}
+
+.teste input {
+    padding: 5px;
+    width: 200px;
+}
+
+.Log {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Log li {
+    margin: 0 10px;
+}
+
+.Log a {
+    color: #030330;
+    text-decoration: none;
+}
+
+.carrinho {
+    display: flex;  
+}
+
+
+#finaliza {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#Finalizar {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#Finalizar:hover {
+    background-color: #555;
+}
+
+section {
+    flex: 3;
+}
+
+aside {
+    height: 327px;
+    padding: 20px;
+    background-color: #f7b4c4;
+    border: 2px solid #030303
+}
+
+table {
+    background-color: #f7b4c4;
+    width: 500px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 2px solid #030303;
+    text-align: left;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.product img {
+    width: 100px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #090909;
+
+}
+
+.box header {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box .info {
+    margin-bottom: 10px;
+}
+
+.box .info div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.box footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+#Finalizar {
+    background-color: #030303;
+    color: #efefef;
+    border: solid 2px #030303;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+button {
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #030303;
+    color: #030303;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

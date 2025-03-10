@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="/Style/Destaques.css">
+    <link rel="stylesheet" href="/Style/load.css">
+    <link rel="stylesheet" href="/Style/Login.css">
+    <link rel="stylesheet" href="/Style/roupa.css">
+    <link rel="stylesheet" href="/Style/carrinho.css">
+</head>
+
+<body>
+    <header>
+        <h1>BeYou</h1>
+        <div class="teste">
+            <input type="text" id="Barra" placeholder="Digite para pesquisar..." onkeyup="conteudosg()">
+            <ul id="suggestions" style="display: none;"></ul>
+        </div>
+        <ul class="Log">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Registro.html">Registro</a></li>
+            <li><a href="Carrinho.html">Carrinho</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Destaques.html">Makes</a></li>
+            <li><a href="Beleza.html">Galeria</a></li>
+        </ul>
+    </nav>
+    <div id="loading">
+        <div class="load"></div>
+    </div>
+    <main>
+        <div class="carrinho">
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="product">
+                                    <img src="/img/download.jpeg" alt="Produto 1">
+                                    <div class="info">
+                                        <div class="name">Batom líquido Mate
+                                        </div>
+                                        <div class="category">Categoria</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$ 10,00</td>
+                            <td id="quantidade">1</td>
+                            <td>R$ 10,00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product">
+                                    <img src="img/download (1).jpeg" alt="Produto 2">
+                                    <div class="info">
+                                        <div class="name">O Espelho de Maquiagem com Led Niina Secrets</div>
+                                        <div class="category">Categoria</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$ 20,00</td>
+                            <td id="quantidade">2</td>
+                            <td>R$ 40,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <aside>
+                <div class="box">
+                    <h1>Resumo da compra</h1>
+                    <div class="info">
+                        <div><span>Sub-total</span><span>R$ 50,00</span></div>
+                        <div><span>Frete</span><span>Gratuito</span></div>
+                    </div>
+                    <footer>
+                        <span>Total</span>
+                        <span>R$ 50,00</span>
+                    </footer>
+                </div>
+                <div id="finaliza">
+                    <button id="Finalizar">Finalizar Compra</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 BeYou. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/scripts/barraps.js"></script>
+    <script src="/scripts/load.js"></script>
+    <script src="/scripts/Roupas.js"></script>
+    <script src="/scripts/carrinho.js"></script>
+</body>
+
+</html>

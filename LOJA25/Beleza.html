@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makes</title>
+    <link rel="stylesheet" href="/Style/Destaques.css">
+    <link rel="stylesheet" href="/Style/load.css">
+    <link rel="stylesheet" href="/Style/Login.css">
+    <link rel="stylesheet" href="/Style/roupa.css">
+</head>
+
+<body>
+    <header>
+        <h1>BeYou</h1>
+        <div class="teste">
+            <input type="text" id="Barra" placeholder="Digite para pesquisar..." onkeyup="conteudosg()">
+            <ul id="suggestions" style="display: none;"></ul>
+        </div>
+        <ul class="Log">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Registro.html">Registro</a></li>
+            <li><a href="Carrinho.html">Carrinho</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Destaques.html">Makes</a></li>
+            <li><a href="Beleza.html">Galeria</a></li>
+        </ul>
+    </nav>
+    <div id="loading">
+        <div class="load"></div>
+    </div>
+    <main>
+        <div id="loading" style="display: none;">
+            <div class="load"></div>
+        </div>
+        <div id="resultado" style="display: none;"></div>
+        <div class="cartao" data-id="1">
+            <h3>Batom líquido Mate</h3>
+            <img src="/img/download.jpeg" alt="Produto 1">
+            <p>Com efeito mate e textura aveludada como uma pétala, este batom líquido traz cor e conforto para os
+                lábios.
+            </p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="2">
+            <h3>O Espelho de Maquiagem com Led Niina Secrets</h3>
+            <img src="/img/download (1).jpeg" alt="Produto 2">
+            <p>É o acessório que faltava para compor sua experiência de make e skincare e deixar você se sentindo uma
+                estrela. Com uma iluminação em led que permite ser usado em qualquer ambiente e iluminação, o espelho é
+                fácil de utilizar e multifuncional. </p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="3">
+            <h3>Paleta de Sombras Niina Secrets Orange 
+            </h3>
+            <img src="/img/download (2).jpeg" alt="Produto 3">
+            <p>É a tendência do verão que você pediu! Em edição limitada e colecionável, traz a sombra laranja em uma
+                maquiagem em tons terrosos com muita cor e brilho para os diferentes tons de pele, para makes básicas
+                até as mais elaboradas.</p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="4">
+            <h3>Pó Translúcido Niina Secrets Kabuki </h3>
+            <img src="/img/download (3).jpeg" alt="Produto 4">
+            <p>É a solução ideal para manter sua maquiagem impecável ao longo do dia. Com um efeito matificante, ele
+                controla a oleosidade e proporciona um acabamento suave e natural à pele. Sua textura fina garante que o
+                produto se espalhe uniformemente, evitando acúmulos indesejados.</p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="5">
+            <h3>Esponja De Maquiagem Facial Niina Secrets</h3>
+            <img src="/img/download (4).jpeg" alt="Produto 5">
+            <p>Ideal para texturas cremosas ou em pó, essa esponja pode ser usada para a aplicação de base líquida,
+                corretivo, contorno e pó compacto. A textura ultra aveludada possibilita uma perfeita aplicação e
+                acabamento natural e uniforme.</p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+        <div class="cartao" data-id="6">
+            <h3>Pó Solto Ultrafino Perfect Match Niina Secrets</h3>
+            <img src="/img/download (5).jpeg" alt="Produto 6">
+            <p>Possui acabamento aveludado e natural, durando o dia todo. Sua fórmula disfarça linhas de expressão,
+                controla o brilho, sela e fixa a maquiagem sem pesar ou marcar, deixando a pele respirar e permite
+                construir camadas: quanto mais aplicação maior a cobertura.
+            </p>
+            <span class="preco">R$ 10,00</span>
+        </div>
+    </main>
+
+    <!-- Card -->
+    <div id="card" class="card">
+        <div class="card-content">
+            <span class="close">&times;</span>
+            <h3 id="card-titulo"></h3>
+            <img id="card-imagem" src="" alt="">
+            <p id="card-Descricao"></p>
+            <span id="card-preco"></span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/scripts/barraps.js"></script>
+    <script src="/scripts/load.js"></script>
+    <script src="/scripts/Roupas.js"></script>
+    <footer>
+        <p>&copy; 2025 BeYou. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

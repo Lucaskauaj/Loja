@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.loginn {
+    font-family: Arial, sans-serif;
+    width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #f7b4c4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+.loginn h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: black solid 1px;
+}
+
+.loginn th {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.loginn label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.loginn input {
+    width: 400PX;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.butao {
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.loginn button {
+    width: 150px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+}
+
+.loginn button:hover {
+    background-color: rgb(94, 48, 48);
+}
+@media (max-width: 768px) {
+    .loginn {
+        width: 90%;
+        height: auto;
+        margin: 5vh auto;
+        padding: 15px;
+    }
+
+    .loginn input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .loginn button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginn {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .loginn h1 {
+        font-size: 20px;
+    }
+
+    .loginn th {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .loginn input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .loginn button {
+        font-size: 14px;
+        height: 35px;
+    }
+}

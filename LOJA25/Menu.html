@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeYou</title>
+    <link rel="stylesheet" href="/Style/Menu.css">
+    <link rel="stylesheet" href="/Style/load.css">
+    <link rel="stylesheet" href="/Style/Login.css">
+    <link rel="stylesheet" href="/Style/Destaques.css">
+    <link rel="stylesheet" href="/Style/ogin.css">
+</head>
+
+<body>
+    <header>
+        <h1>BeYou</h1>
+        <div style="position: relative;">
+            <input type="text" id="Barra" placeholder="Digite para pesquisar..." onkeyup="searchContent()">
+            <ul id="sugestao"></ul>
+        </div>
+        <ul class="Log">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Carrinho.html">Carrinho</a></li>
+            <li><a href="Registro.html">Registro</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Destaques.html">Makes</a></li>
+            <li><a href="Beleza.html">Galeria</a></li>
+        </ul>
+    </nav>
+    
+    <div id="loading">
+        <div class="load"></div>
+    </div>
+    <main>
+        <div id="loading" style="display: none;">
+            <div class="load"></div>
+        </div>
+
+        <div id="resultado" style="display: none;"></div>
+        <div class="principal" data-id="1">
+            <h2>Descubra a Beleza que Realça Sua Essência!</h2>
+            <p>
+
+
+                Bem-vindo à BeYou, o seu destino para os melhores produtos de beleza! Aqui, você encontra uma seleção
+                cuidadosamente escolhida de cosméticos, skincare, maquiagens e cuidados capilares das marcas mais
+                renomadas do mercado.
+
+                <br><br>
+                Nosso compromisso é oferecer produtos de alta qualidade que realcem sua beleza natural, promovam o
+                autocuidado e elevem sua autoestima. Seja para um ritual de skincare relaxante ou uma maquiagem
+                impecável, temos tudo o que você precisa para brilhar ainda mais!
+
+                <br><br>
+                Explore nossa coleção e encontre os segredos para uma beleza única e autêntica.
+
+                <br><br>
+                Sua beleza, nosso propósito!
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 BeYou. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="/scripts/barraps.js"></script>
+<script src="/scripts/load.js"></script>
+
+</html>
